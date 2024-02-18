@@ -204,6 +204,28 @@ function App() {
           </div>
         </div>
 
+        <div className="clients">
+          <div className="clients-inner">
+            <h3>Veja o que nossos <b>clientes</b> dizem</h3>
+            <div className="clients-carrousel">
+              <div className="clients-texts">
+                <h2>Aumento de 80% nas oportunidades</h2>
+                <div className="divider"></div>
+                <p>Nossa geração de leads focava em volume e o resultado era sem qualidade. Com a inteligência da Speedio, recebemos até 80% mais oportunidades de negócio e mais de 10 horas de produtividade semanal.</p>
+              </div>
+              <div className="user">
+                <UserIcon className="user-svg" />
+                <div className="user-details">
+                  <span>Vanessa Andrade</span>
+                  <p>Diretora de Vendas</p>
+                </div>
+              </div>
+            </div>
+            <div className="clients-carrousel">
+            </div>
+          </div>
+        </div>
+
         <div className="hero-data">
           <h2>Dados de mais de 40 milhões de empresas <span>estão na Speedio</span></h2>
           <div className="data-cards">
@@ -255,28 +277,6 @@ function App() {
 
         <div className="more-sales">
           <MoreSalesIcon />
-        </div>
-
-        <div className="clients">
-          <div className="clients-inner">
-            <h3>Veja o que nossos <b>clientes</b> dizem</h3>
-            <div className="clients-carrousel">
-              <div className="clients-texts">
-                <h2>Aumento de 80% nas oportunidades</h2>
-                <div className="divider"></div>
-                <p>Nossa geração de leads focava em volume e o resultado era sem qualidade. Com a inteligência da Speedio, recebemos até 80% mais oportunidades de negócio e mais de 10 horas de produtividade semanal.</p>
-              </div>
-              <div className="user">
-                <UserIcon className="user-svg" />
-                <div className="user-details">
-                  <span>Vanessa Andrade</span>
-                  <p>Diretora de Vendas</p>
-                </div>
-              </div>
-            </div>
-            <div className="clients-carrousel">
-            </div>
-          </div>
         </div>
 
         <div className="integrations">
