@@ -7,6 +7,8 @@ import IntegrationsIcon from "./icons/IntegrationsIcon"
 import PlansIcon from "./icons/PlansIcon"
 import MoreSalesIcon from "./icons/MoreSalesIcon"
 import UserIcon from "./icons/UserIcon"
+import { RiArrowDownDoubleFill } from "react-icons/ri"
+import { RiArrowUpDoubleLine } from "react-icons/ri"
 
 function App() {
   const dataRefs = useRef([])
@@ -302,6 +304,7 @@ function App() {
                 <div className={showAnswerF[index] ? 'faq-block-title expanded' : 'faq-block-title'} key={index} onClick={() => toggleAnswer(index, 'F')}>
                   <p className={showAnswerF[index] ? "hidden" : ""}>{question.title}</p>
                   <p className={showAnswerF[index] ? "answer" : "hidden"}>{question.answer}</p>
+                  {showAnswerF[index] ? <RiArrowUpDoubleLine class='arrow-icon'/> : <RiArrowDownDoubleFill class='arrow-icon'/>}
                 </div>
               ))}
             </div>
@@ -310,6 +313,7 @@ function App() {
                 <div className={showAnswerS[index] ? 'faq-block-title expanded' : 'faq-block-title'} key={index} onClick={() => toggleAnswer(index, 'S')}>
                   <p className={showAnswerS[index] ? "hidden" : ""}>{question.title}</p>
                   <p className={showAnswerS[index] ? "answer" : "hidden"}>{question.answer}</p>
+                  {showAnswerS[index] ? <RiArrowUpDoubleLine class='arrow-icon'/> : <RiArrowDownDoubleFill class='arrow-icon'/>}
                 </div>
               ))}
             </div>
